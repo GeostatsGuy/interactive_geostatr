@@ -1,7 +1,7 @@
+FROM rocker/verse:latest
 
-#FROM base
-#RUN apt-get update
+RUN R -e "install.packages('gstat', repos = 'http://cran.us.r-project.org')"
 
-RUN pip install gstat
+
 
 
